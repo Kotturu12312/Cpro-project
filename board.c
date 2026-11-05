@@ -17,3 +17,17 @@ void printboard(void){
     }
     return ;
 }
+void initplayers(struct game player[]){
+    player[0].row=0;
+    player[0].col=4;
+    player[0].wallsleft=10;
+    player[0].goalrow=8;
+    player[0].symbol='1';
+    player[1].row=8;
+    player[1].col=4;
+    player[1].wallsleft=10;
+    player[1].goalrow=0;
+    player[1].symbol='2';
+    board[player[0].row*2+1][player[0].col*2+2]=player[0].symbol;
+    board[player[1].row*2+1][player[1].col*2+2]=player[1].symbol;
+}

@@ -8,5 +8,5 @@ struct game{
 
 extern char board[18][21];
 void printboard(void);
-
+void initplayers(struct game player[]);
 #endif
